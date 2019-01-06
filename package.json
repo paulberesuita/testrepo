@@ -12,7 +12,7 @@
     "start:server": "cd server && yarn start",
     "dev": "run-p start:*",
     "build": "cd client && yarn build",
-    "copy:client": "cpx client/build/ server/public",
+    "copy:client": "cpx 'client/build/**/*' 'server/public'",
     "start": "run-s copy:client start:server",
     "postinstall": "run-p install:*"
   },
