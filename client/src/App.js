@@ -42,10 +42,10 @@ class App extends Component {
     // };
 
     axios
-      .get('/sendbacktoen', {})
+      .get('/login', { "Access-Control-Allow-Origin": "*"})
       .then(res => {
         console.log('test');
-        var test = res["data"];
+        var test = res['data'];
         console.log('test');
       })
       .catch(error => {
